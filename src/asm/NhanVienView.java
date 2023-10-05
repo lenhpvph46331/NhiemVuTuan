@@ -443,6 +443,17 @@ public class NhanVienView extends javax.swing.JFrame {
 
     private void tblNhanVienMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNhanVienMouseClicked
         // TODO add your handling code here:
+        int i = tblNhanVien.getSelectedRow();
+        String maNV = (String) tblNhanVien.getValueAt(i, 0);
+        txtMaNhanVien.setText(maNV);
+        String hoTen = (String) tblNhanVien.getValueAt(i, 1);
+        txtHoTen.setText(hoTen);
+        String tuoi = (String) tblNhanVien.getValueAt(i, 2);
+        txtTuoi.setText(tuoi);
+        String email = (String) tblNhanVien.getValueAt(i, 3);
+        txtEmail.setText(email);
+        String luong = (String) tblNhanVien.getValueAt(i, 4);
+        txtLuong.setText(luong);
     }//GEN-LAST:event_tblNhanVienMouseClicked
 
     /**
