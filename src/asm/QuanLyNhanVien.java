@@ -20,7 +20,9 @@ public class QuanLyNhanVien {
         listNhanVien.add(new NhanVien("NV04", "Phùn Văn Lềnh", "20", "lenhpvph46331@gmail.com", 6799999.87878));
     }
 
-    
+    ArrayList<NhanVien> getListNhanVien(){
+        return listNhanVien;
+    }
     
     
 }
