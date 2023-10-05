@@ -13,12 +13,12 @@ public class NhanVien {
     private String hoVaTen;
     private String tuoi;
     private String email;
-    private Integer luong;
+    private Double luong;
 
     public NhanVien() {
     }
 
-    public NhanVien(String maNhanVien, String hoVaTen, String tuoi, String email, Integer luong) {
+    public NhanVien(String maNhanVien, String hoVaTen, String tuoi, String email, Double luong) {
         this.maNhanVien = maNhanVien;
         this.hoVaTen = hoVaTen;
         this.tuoi = tuoi;
@@ -58,11 +58,11 @@ public class NhanVien {
         this.email = email;
     }
 
-    public Integer getLuong() {
+    public Double getLuong() {
         return luong;
     }
 
-    public void setLuong(Integer luong) {
+    public void setLuong(Double luong) {
         this.luong = luong;
     }
 
