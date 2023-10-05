@@ -4,6 +4,9 @@
  */
 package asm;
 
+import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author admin
@@ -13,6 +16,10 @@ public class NhanVienView extends javax.swing.JFrame {
     /**
      * Creates new form ThongTinNhanVienView
      */
+    ArrayList<NhanVien> list = new ArrayList<>();
+    DefaultTableModel dTM;
+    QuanLyNhanVien  quanLyNhanVien = new QuanLyNhanVien();
+    
     public NhanVienView() {
         initComponents();
     }
