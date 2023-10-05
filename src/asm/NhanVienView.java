@@ -156,6 +156,11 @@ public class NhanVienView extends javax.swing.JFrame {
                 "Mã", "Họ tên", "Tuổi", "Email", "Lương"
             }
         ));
+        tblNhanVien.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblNhanVienMouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(tblNhanVien);
 
         btnNew.setText("New");
@@ -402,6 +407,10 @@ public class NhanVienView extends javax.swing.JFrame {
     private void btnCuoiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCuoiMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCuoiMouseClicked
+
+    private void tblNhanVienMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNhanVienMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tblNhanVienMouseClicked
 
     /**
      * @param args the command line arguments
