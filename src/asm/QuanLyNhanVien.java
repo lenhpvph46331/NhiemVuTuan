@@ -13,7 +13,16 @@ import java.util.ArrayList;
 public class QuanLyNhanVien {
     ArrayList<NhanVien> listNhanVien = new ArrayList<>();
 
-    
+    public QuanLyNhanVien() {
+        listNhanVien.add(new NhanVien("NV01", "Nguyễn Hữu Nghĩa", "23", "nghianhph46340@gmail.com", 9999999.87878));
+        listNhanVien.add(new NhanVien("NV02", "Hoàng Thọ Chính", "18", "chinh12345@gmail.com", 922999.87878));
+        listNhanVien.add(new NhanVien("NV03", "Phạm Thị Quỳnh Thu", "21", "Thuptq@gmail.com", 978999.87878));
+        listNhanVien.add(new NhanVien("NV04", "Phùn Văn Lềnh", "20", "lenhpvph46331@gmail.com", 6799999.87878));
+    }
+
+    ArrayList<NhanVien> getListNhanVien(){
+        return listNhanVien;
+    }
     
     
 }
