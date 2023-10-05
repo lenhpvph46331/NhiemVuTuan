@@ -16,6 +16,7 @@ public class NhanVienView extends javax.swing.JFrame {
     /**
      * Creates new form ThongTinNhanVienView
      */
+    
     ArrayList<NhanVien> list = new ArrayList<>();
     DefaultTableModel dTM;
     QuanLyNhanVien  quanLyNhanVien = new QuanLyNhanVien();
@@ -25,8 +26,18 @@ public class NhanVienView extends javax.swing.JFrame {
         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
     }
     
-    void loadData(ArrayList<NhanVien> nhanVien) {
+    void loadData(ArrayList<NhanVien> list) {
         dTM = (DefaultTableModel) tblNhanVien.getModel();
+        dTM.setRowCount(0);
+        for (NhanVien nhanVien : list) {
+            dTM.addRow(new Object[]{
+                nhanVien.getMaNhanVien(),
+                nhanVien.getHoVaTen(),
+                nhanVien.getTuoi(),
+                nhanVien.getEmail(),
+                nhanVien.getLuong()
+            });
+        }
     }
     
     /**
