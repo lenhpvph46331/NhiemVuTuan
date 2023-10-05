@@ -16,6 +16,7 @@ public class NhanVienView extends javax.swing.JFrame {
     /**
      * Creates new form ThongTinNhanVienView
      */
+    
     ArrayList<NhanVien> list = new ArrayList<>();
     DefaultTableModel dTM;
     QuanLyNhanVien  quanLyNhanVien = new QuanLyNhanVien();
