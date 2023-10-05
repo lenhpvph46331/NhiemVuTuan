@@ -25,7 +25,21 @@ public class NhanVienView extends javax.swing.JFrame {
         initComponents();
         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
     }
-
+    
+    void loadData(ArrayList<NhanVien> list) {
+        dTM = (DefaultTableModel) tblNhanVien.getModel();
+        dTM.setRowCount(0);
+        for (NhanVien nhanVien : list) {
+            dTM.addRow(new Object[]{
+                nhanVien.getMaNhanVien(),
+                nhanVien.getHoVaTen(),
+                nhanVien.getTuoi(),
+                nhanVien.getEmail(),
+                nhanVien.getLuong()
+            });
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
