@@ -24,6 +24,7 @@ public class NhanVienView extends javax.swing.JFrame {
     public NhanVienView() {
         initComponents();
         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
+        loadData(list);
     }
     
     void loadData(ArrayList<NhanVien> list) {
