@@ -39,6 +39,15 @@ public class NhanVienView extends javax.swing.JFrame {
             });
         }
     }
+    public void clearForm(){
+        txtHoTen.setText("");
+        txtEmail.setText("");
+        txtLuong.setText("");
+        txtMaNhanVien.setText("");
+        txtTuoi.setText("");
+        
+    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -393,6 +402,7 @@ public class NhanVienView extends javax.swing.JFrame {
 
     private void btnNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewMouseClicked
         // TODO add your handling code here:
+        clearForm();
     }//GEN-LAST:event_btnNewMouseClicked
 
     private void btnSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveMouseClicked
