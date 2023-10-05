@@ -24,6 +24,7 @@ public class NhanVienView extends javax.swing.JFrame {
     public NhanVienView() {
         initComponents();
         ArrayList<NhanVien> list = quanLyNhanVien.getListNhanVien();
+        loadData(list);
     }
     
     void loadData(ArrayList<NhanVien> list) {
@@ -39,6 +40,15 @@ public class NhanVienView extends javax.swing.JFrame {
             });
         }
     }
+    public void clearForm(){
+        txtHoTen.setText("");
+        txtEmail.setText("");
+        txtLuong.setText("");
+        txtMaNhanVien.setText("");
+        txtTuoi.setText("");
+        
+    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -393,6 +403,7 @@ public class NhanVienView extends javax.swing.JFrame {
 
     private void btnNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewMouseClicked
         // TODO add your handling code here:
+        clearForm();
     }//GEN-LAST:event_btnNewMouseClicked
 
     private void btnSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveMouseClicked
@@ -433,6 +444,17 @@ public class NhanVienView extends javax.swing.JFrame {
 
     private void tblNhanVienMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNhanVienMouseClicked
         // TODO add your handling code here:
+        int i = tblNhanVien.getSelectedRow();
+        String maNV = (String) tblNhanVien.getValueAt(i, 0);
+        txtMaNhanVien.setText(maNV);
+        String hoTen = (String) tblNhanVien.getValueAt(i, 1);
+        txtHoTen.setText(hoTen);
+        String tuoi = (String) tblNhanVien.getValueAt(i, 2);
+        txtTuoi.setText(tuoi);
+        String email = (String) tblNhanVien.getValueAt(i, 3);
+        txtEmail.setText(email);
+        String luong = (String) tblNhanVien.getValueAt(i, 4);
+        txtLuong.setText(luong);
     }//GEN-LAST:event_tblNhanVienMouseClicked
 
     /**
