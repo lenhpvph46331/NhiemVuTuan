@@ -246,6 +246,7 @@
         <Property name="text" type="java.lang.String" value="|&lt;"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDauMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDauActionPerformed"/>
       </Events>
     </Component>
@@ -254,6 +255,7 @@
         <Property name="text" type="java.lang.String" value="&gt;|"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCuoiMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCuoiActionPerformed"/>
       </Events>
     </Component>
@@ -262,6 +264,7 @@
         <Property name="text" type="java.lang.String" value="&lt;&lt;"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnPrevMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrevActionPerformed"/>
       </Events>
     </Component>
@@ -270,6 +273,7 @@
         <Property name="text" type="java.lang.String" value="&gt;&gt;"/>
       </Properties>
       <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnNextMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNextActionPerformed"/>
       </Events>
     </Component>
@@ -372,6 +376,7 @@
             <Property name="text" type="java.lang.String" value="New"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnNewMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNewActionPerformed"/>
           </Events>
         </Component>
@@ -379,26 +384,41 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Save"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnSaveMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnDelete">
           <Properties>
             <Property name="text" type="java.lang.String" value="Delete"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDeleteMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnFind">
           <Properties>
             <Property name="text" type="java.lang.String" value="Find"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnFindMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnOpen">
           <Properties>
             <Property name="text" type="java.lang.String" value="Open"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnOpenMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnExit">
           <Properties>
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnExitMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

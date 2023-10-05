@@ -98,6 +98,11 @@ public class NhanVienView extends javax.swing.JFrame {
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         btnDau.setText("|<");
+        btnDau.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDauMouseClicked(evt);
+            }
+        });
         btnDau.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDauActionPerformed(evt);
@@ -105,6 +110,11 @@ public class NhanVienView extends javax.swing.JFrame {
         });
 
         btnCuoi.setText(">|");
+        btnCuoi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCuoiMouseClicked(evt);
+            }
+        });
         btnCuoi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCuoiActionPerformed(evt);
@@ -112,6 +122,11 @@ public class NhanVienView extends javax.swing.JFrame {
         });
 
         btnPrev.setText("<<");
+        btnPrev.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPrevMouseClicked(evt);
+            }
+        });
         btnPrev.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrevActionPerformed(evt);
@@ -119,6 +134,11 @@ public class NhanVienView extends javax.swing.JFrame {
         });
 
         btnNext.setText(">>");
+        btnNext.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnNextMouseClicked(evt);
+            }
+        });
         btnNext.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNextActionPerformed(evt);
@@ -139,6 +159,11 @@ public class NhanVienView extends javax.swing.JFrame {
         jScrollPane2.setViewportView(tblNhanVien);
 
         btnNew.setText("New");
+        btnNew.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnNewMouseClicked(evt);
+            }
+        });
         btnNew.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNewActionPerformed(evt);
@@ -146,14 +171,39 @@ public class NhanVienView extends javax.swing.JFrame {
         });
 
         btnSave.setText("Save");
+        btnSave.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSaveMouseClicked(evt);
+            }
+        });
 
         btnDelete.setText("Delete");
+        btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDeleteMouseClicked(evt);
+            }
+        });
 
         btnFind.setText("Find");
+        btnFind.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnFindMouseClicked(evt);
+            }
+        });
 
         btnOpen.setText("Open");
+        btnOpen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOpenMouseClicked(evt);
+            }
+        });
 
         btnExit.setText("Exit");
+        btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnExitMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -312,6 +362,46 @@ public class NhanVienView extends javax.swing.JFrame {
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnNewActionPerformed
+
+    private void btnNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNewMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNewMouseClicked
+
+    private void btnSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaveMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSaveMouseClicked
+
+    private void btnDeleteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDeleteMouseClicked
+
+    private void btnFindMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFindMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFindMouseClicked
+
+    private void btnOpenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOpenMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOpenMouseClicked
+
+    private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitMouseClicked
+
+    private void btnDauMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDauMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDauMouseClicked
+
+    private void btnPrevMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPrevMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPrevMouseClicked
+
+    private void btnNextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNextMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNextMouseClicked
+
+    private void btnCuoiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCuoiMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCuoiMouseClicked
 
     /**
      * @param args the command line arguments
